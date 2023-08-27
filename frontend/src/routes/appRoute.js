@@ -20,11 +20,12 @@ import {
   mainnet,
   optimism,
   goerli,
+  arbitrum, arbitrumGoerli, arbitrumNova,
   bscTestnet,
 } from 'wagmi/chains';
 
 const { chains, publicClient } = configureChains(
-  [mainnet, optimism, goerli, bscTestnet],
+  [mainnet, optimism, goerli, bscTestnet, arbitrum, arbitrumGoerli, arbitrumNova],
   [publicProvider()]
 );
 
